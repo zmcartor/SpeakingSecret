@@ -1,0 +1,34 @@
+@SpeakingSecret
+
+A fun way to learn Natural Language Processing with Python by interacting with Twitter!
+Twitter bot code inspired by the post by Vivek Haldar
+http://blog.vivekhaldar.com/post/2830035130/how-to-write-a-twitter-bot-in-python
+
+Depends on the library "python tools for twitter" found at:
+http://mike.verdone.ca/twitter/
+
+To run, simply do the OAuth dance using the commandline twitter application built from the 'twitter' library
+
+For Example: 
+NULL:~ zachmcartor$ twitter authorize
+Hi there! We're gonna get you all set up to use the Command-Line Tool.
+https://api.twitter.com/oauth/request_token
+/Library/Python/2.6/site-packages/twitter-1.6-py2.6.egg/twitter/api.py:80: DeprecationWarning: object.__init__() takes no parameters
+
+In the web browser window that opens please choose to Allow
+access. Copy the PIN number that appears on the next page and paste or
+type it here:
+
+Opening: http://api.twitter.com/oauth/authorize?oauth_token=MkD1iiVRPa73lH1S6qyPlLiZHrCPQRMex5bsgKiIg
+
+Please enter the PIN: (PUT YOUR PIN HERE!)
+
+This will create a file in your HOME called .twitter_oauth. 
+
+Now - run the bot.
+
+python SpeakingSecret.py
+The bot will read your .twitter_oauth credentials and start the polling loop.
+Every 30secs, the bot will search for mentions of it @SpeakingSecret, and analyze the input.
+
+
