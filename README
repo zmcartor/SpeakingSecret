@@ -7,6 +7,13 @@ http://blog.vivekhaldar.com/post/2830035130/how-to-write-a-twitter-bot-in-python
 Depends on the library "python tools for twitter" found at:
 http://mike.verdone.ca/twitter/
 
+Cleverbot library
+http://code.google.com/p/pycleverbot/
+
+As the bot AI, I hooked it up to Cleverbot to provide the responses.
+If you can, try writing your own bot using the python natural language toolkit
+(nltk).  
+
 To run, simply do the OAuth dance using the commandline twitter application built from the 'twitter' library
 
 For Example: 
